@@ -16,6 +16,6 @@ public class EmailValidator implements Predicate<String> {
 
     @Override
     public boolean test(String email) {
-        return IS_EMAIL_VALID.test(email);
+        return IS_EMAIL_VALID.negate().test(email);
     }
 }
